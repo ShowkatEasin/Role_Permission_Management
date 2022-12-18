@@ -18,9 +18,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
+
+//admin routes
+
+Route::get('/admin', function () {
+    return view('backend.layouts.master');
+});
+// Route::group(['prefix' => 'admin'], function(){
+
+//     Route::get('/admin', 'Backend/DashboardController@index')->name ('admin.dashboard');  
+ 
+//     });
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
