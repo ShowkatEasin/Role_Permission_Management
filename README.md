@@ -1,7 +1,7 @@
 
 A project which manage Role, Permissions and every actions of your Laravel application. A complete solution for Role based Access Control in Laravel.
 
-Username - superadmin
+Username - superadmin </br>
 password - 12345678
 
 > Note : Don't try to modify the Super Admin (Role & admin) data, just for Heroku deployment.
